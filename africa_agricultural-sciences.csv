@@ -1,0 +1,6 @@
+﻿address_line,city,country_name,country_subdivision,country_urlname,global_rank,id,name,overall_rank_is_tied,rank,rank_is_tied,score,sort_label,url,urlname
+Stellenbosch,Stellenbosch,South Africa,,south-africa,329,500980,Stellenbosch University,True,83,False,58.4,Subject Score,https://www.usnews.com/education/best-global-universities/stellenbosch-university-500980,stellenbosch-university
+Sfax,Sfax,Tunisia,,tunisia,951,529029,Universite de Sfax,True,190,False,43.9,Subject Score,https://www.usnews.com/education/best-global-universities/universite-de-sfax-529029,universite-de-sfax
+Durban,Durban,South Africa,,south-africa,338,504296,University of KwaZulu Natal,True,230,True,37.2,Subject Score,https://www.usnews.com/education/best-global-universities/university-of-kwazulu-natal-504296,university-of-kwazulu-natal
+Giza,Giza,Egypt,,egypt,434,501834,Cairo University,True,232,False,37.0,Subject Score,https://www.usnews.com/education/best-global-universities/cairo-university-501834,cairo-university
+Hatfield,Hatfield,South Africa,,south-africa,441,501543,University of Pretoria,True,234,False,36.4,Subject Score,https://www.usnews.com/education/best-global-universities/university-of-pretoria-501543,university-of-pretoria
