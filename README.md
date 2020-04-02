@@ -1,7 +1,7 @@
 # US_news Best Global Universities scraper
 A simple web crawler to crawl Best Global University Ranking on [US News website](https://www.usnews.com/education/best-global-universities).
 
-Interested to know how I do it? Visit here(https://towardsdatascience.com/how-to-build-a-simple-web-crawler-66082fc82470) for more info.
+Interested to know how I do it? Visit [here](https://towardsdatascience.com/how-to-build-a-simple-web-crawler-66082fc82470) for more info.
 
 # Installation
 Install with pip:
