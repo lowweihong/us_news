@@ -8,23 +8,23 @@ def scrape(region, subject):
     base_url = "https://www.usnews.com/education/best-global-universities/search?region=%s&subject=%s&format=json"
 
     r = httpx.get(base_url%(region, subject)).json()
-
+    
     last_page = r.get('total_pages')
 
     if last_page == '1':
-        results = r.get('results')
+        results = r.get('items')
     else:
         base_url = 'https://www.usnews.com/education/best-global-universities/search?region=%s&subject=%s&page=%i&format=json'
 
         results = []
 
-        results += r.get('results')
+        results += r.get('items')
 
         for p in range(2, int(last_page)+1):
             
             r = httpx.get(base_url%(region, subject, p)).json()
 
-            results += r.get('results')
+            results += r.get('items')
 
             time.sleep(random.randint(2,4))
 
