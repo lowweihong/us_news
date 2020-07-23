@@ -9,7 +9,7 @@ def scrape(region, subject):
 
     r = httpx.get(base_url%(region, subject)).json()
 
-    last_page = r.get('pagination')['last_page']
+    last_page = r.get('total_pages')
 
     if last_page == '1':
         results = r.get('results')
