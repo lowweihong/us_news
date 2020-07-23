@@ -8,7 +8,7 @@ import setuptools
 
 setuptools.setup(
     name="us_news",
-    version="0.0.2",
+    version="0.0.3",
     description="A web crawler to crawl Best Global University Ranking on usnews website",
     long_description=readme,
     author='Low Wei Hong',
