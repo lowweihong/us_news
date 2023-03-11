@@ -4,17 +4,33 @@ import pandas as pd
 import random
 import time
 
-def scrape(region, subject):
-    base_url = "https://www.usnews.com/education/best-global-universities/search?region=%s&subject=%s&format=json"
+headers = {
+    'authority': 'www.usnews.com',
+    'accept': '*/*',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'referer': 'https://www.usnews.com/',
+    'sec-ch-ua': '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"macOS"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+}
 
-    r = httpx.get(base_url%(region, subject)).json()
+
+def scrape(region, subject):
+               
+    base_url = "https://www.usnews.com/education/best-global-universities/%s?format=json&region=%s"
+
+    r = httpx.get(base_url%(subject, region), headers=headers).json()
     
     last_page = r.get('total_pages')
 
     if last_page == '1':
         results = r.get('items')
     else:
-        base_url = 'https://www.usnews.com/education/best-global-universities/search?region=%s&subject=%s&page=%i&format=json'
+        base_url = "https://www.usnews.com/education/best-global-universities/%s?format=json&region=%s&page=%i"
 
         results = []
 
@@ -22,7 +38,7 @@ def scrape(region, subject):
 
         for p in range(2, int(last_page)+1):
             
-            r = httpx.get(base_url%(region, subject, p)).json()
+            r = httpx.get(base_url%(subject, region, p), headers=headers).json()
 
             results += r.get('items')
 

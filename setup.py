@@ -1,7 +1,7 @@
 import setuptools
 
-# with open("README.md", "r") as f:
-#     readme = f.read()
+with open("README.md", "r") as f:
+    readme = f.read()
 
 # with open("requirements.txt", "r") as f:
 #     reqs = [lib.strip() for lib in f if lib]
