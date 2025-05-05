@@ -1,2 +1,5 @@
 *.csv
-__pycache__
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
