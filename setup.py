@@ -8,14 +8,14 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="us_news",
-    version="0.0.3",
+    version="0.0.4",
     description="A web crawler to crawl Best Global University Ranking on usnews website",
     long_description=readme,
     author='Low Wei Hong',
     author_email='M140042@e.ntu.edu.sg',
     url="https://github.com/M140042/us_news",
     packages=setuptools.find_packages(),
-    keywords="us_news",
+    keywords=["us_news", "university_rankings"],
     classifiers=[
         "Programming Language :: Python :: 3",
     ],
