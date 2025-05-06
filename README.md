@@ -6,7 +6,7 @@ Interested to know how I do it? Visit [here](https://towardsdatascience.com/how-
 # Installation
 Install with pip:
 
-`$ pip install us_news`
+`$ pip install university_ranking_scraper`
 
 # Usage
 
