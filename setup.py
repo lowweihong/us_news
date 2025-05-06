@@ -8,7 +8,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="us_news",
-    version="0.0.5",
+    version="0.0.6",
     description="A web crawler to crawl Best Global University Ranking on usnews, Times Higher Education, and QS websites",
     long_description=readme,
     long_description_content_type="text/markdown",
