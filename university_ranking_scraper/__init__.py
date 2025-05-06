@@ -8,7 +8,7 @@ import logging
 from pathlib import Path
 from lxml import html
 import re
-from constant import *
+from .constant import *
 
 # Configure logging
 logging.basicConfig(
