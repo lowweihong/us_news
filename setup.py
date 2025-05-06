@@ -8,15 +8,15 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="us_news",
-    version="0.0.7",
+    version="0.0.8",
     description="DEPRECATED – Use university_ranking_scraper instead",
-    long_description='This package has been renamed and moved to https://github.com/M140042/university_ranking_scraper',
+    long_description='This package has been renamed and moved to https://github.com/lowweihong/university_ranking_scraper',
     # description="A web crawler to crawl Best Global University Ranking on usnews, Times Higher Education, and QS websites",
     # long_description=readme,
     long_description_content_type="text/markdown",
     author='Low Wei Hong',
     author_email='M140042@e.ntu.edu.sg',
-    url="https://github.com/M140042/university_ranking_scraper",
+    url="https://github.com/lowweihong/university_ranking_scraper",
     packages=setuptools.find_packages(),
     keywords=["university_rankings", "usnews", "times_higher_education", "qs"],
     classifiers=[
