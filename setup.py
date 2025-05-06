@@ -7,7 +7,7 @@ with open("README.md", "r") as f:
 #     reqs = [lib.strip() for lib in f if lib]
 
 setuptools.setup(
-    name="university_ranking_scraper",
+    name="us_news",
     version="0.0.5",
     description="A web crawler to crawl Best Global University Ranking on usnews, Times Higher Education, and QS websites",
     long_description=readme,
