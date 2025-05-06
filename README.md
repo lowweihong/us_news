@@ -1,4 +1,4 @@
-# US_news Best Global Universities scraper
+# University Subject Ranking Best Global Universities scraper
 A web crawler to scrape university rankings from US News, Times Higher Education, and QS websites.
 
 Interested to know how I do it? Visit [here](https://towardsdatascience.com/how-to-build-a-simple-web-crawler-66082fc82470) for more info.
