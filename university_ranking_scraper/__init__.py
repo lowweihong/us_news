@@ -9,14 +9,6 @@ from pathlib import Path
 from lxml import html
 import re
 from .constant import *
-import warnings
-
-warnings.warn(
-    "The 'us_news' package is deprecated and has been renamed to 'university_ranking'. "
-    "Please update your imports and use the new repository: https://github.com/M140042/university_ranking_scraper",
-    DeprecationWarning,
-    stacklevel=2
-)
 
 # Configure logging
 logging.basicConfig(
